@@ -2,7 +2,7 @@
 MedMambaSS3M backbone wrapper — integrates the existing MedMambaSS3M model
 into the benchmark's BaseMethod interface.
 
-Source: D:\py_project\MRI\code\medmamba_ss3m.py
+Source: ~/MRI/code/medmamba_ss3m.py
 """
 import sys
 import os

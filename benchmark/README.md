@@ -142,7 +142,7 @@ timm (可选, 用于 CrossFormer)
 ## 关键复用
 
 本框架复用以下项目的代码：
-- `D:\py_project\MRI\code\meta` — MedMambaSS3M 骨干 + 元学习策略
-- `D:\桌面\deep fusion\code\CNN_design_for_AD` — 3D CNN 骨干
-- `D:\桌面\deep fusion\code\DeepSPARE` — 3D ResNet 骨干
-- `D:\桌面\deep fusion\code\MML-3DCrossFormer` — CrossFormer 参考
+- `~/MRI/code/meta` — MedMambaSS3M 骨干 + 元学习策略
+- `D:\...\deep fusion\code\CNN_design_for_AD` — 3D CNN 骨干
+- `D:\...\deep fusion\code\DeepSPARE` — 3D ResNet 骨干
+- `D:\...\deep fusion\code\MML-3DCrossFormer` — CrossFormer 参考

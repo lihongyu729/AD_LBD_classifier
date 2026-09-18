@@ -1,5 +1,5 @@
 """
-3D ResNet — adapted from D:\桌面\deep fusion\code\DeepSPARE\mytools\resnet3d.py
+3D ResNet — adapted from D:\...\deep fusion\code\DeepSPARE\mytools\resnet3d.py
 
 Key changes:
 - BatchNorm3d → GroupNorm for small-batch stability (configurable).

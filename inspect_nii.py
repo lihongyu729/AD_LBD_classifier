@@ -110,7 +110,7 @@ def main():
     设计原因与作用：
         - 方便你快速对特定文件做维度与头信息审计，辅助后续数据集/训练脚本修复。
     """
-    default_path = r"d:\py_project\MRI\1.3.12.2.1107.5.2.19.45255.2018122013211713953460238.0.0.0.nii"
+    default_path = "your_scan.nii"
     path = sys.argv[1] if len(sys.argv) >= 2 else default_path
     print_nii_info(path)
 

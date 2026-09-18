@@ -4,7 +4,7 @@ Dual-mode trainer: standard supervised and meta-learning (episodic).
 Standard mode: batch → forward → loss → backward
 Meta mode: episodic tasks → strategy.core_step(support, query) → outer_loss → backward
 
-Adapted from D:\py_project\MRI\code\meta\train_classifier.py (train_meta function).
+Adapted from ~/MRI/code/meta/train_classifier.py (train_meta function).
 """
 import os
 import sys

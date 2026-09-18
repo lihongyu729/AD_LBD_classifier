@@ -1,5 +1,5 @@
 """
-3D CNN Baseline — adapted from D:\桌面\deep fusion\code\CNN_design_for_AD\models\models.py
+3D CNN Baseline — adapted from D:\...\deep fusion\code\CNN_design_for_AD\models\models.py
 
 Removes AgeEncoding, adds forward_encoder/forward_classifier separation.
 Uses InstanceNorm3d for small-batch stability.

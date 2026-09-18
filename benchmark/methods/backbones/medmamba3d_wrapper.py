@@ -1,7 +1,7 @@
 """
 MedMamba3D wrapper — simpler Mamba variant (single branch, dwconv-based).
 
-Source: D:\py_project\MRI\code\medmamba3d.py
+Source: ~/MRI/code/medmamba3d.py
 """
 import sys
 import os

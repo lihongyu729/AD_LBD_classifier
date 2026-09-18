@@ -61,7 +61,7 @@ classifier:
   ema_decay: 0.999
   max_grad_norm: 1.0
   grad_accum_steps: 8
-  pretrained_path: /data/home/scv8970/MRI/code/weights/best_mae.pth
+  pretrained_path: ~/MRI/code/weights/best_mae.pth
   use_class_weights: true
   freeze_bn: false
 
@@ -119,12 +119,12 @@ augment:
   cutout_frac: 0.1
 
 paths:
-  out_dir: /data/home/scv8970/run/MRI/code/meta/out/out
+  out_dir: ~/run/MRI/code/meta/out/out
   
   label_roots:
-    AD: /data/home/scv8970/archive/split_1mm_112/data/AD
-    LBD: /data/home/scv8970/archive/split_1mm_112/data/LBD
-    MCI: /data/home/scv8970/archive/split_1mm_112/data/MCI
+    AD: ~/archive/split_1mm_112/data/AD
+    LBD: ~/archive/split_1mm_112/data/LBD
+    MCI: ~/archive/split_1mm_112/data/MCI
       
 cv:
   cv_n_splits: 10

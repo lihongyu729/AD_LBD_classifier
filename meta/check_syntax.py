@@ -1,7 +1,7 @@
 
 try:
     import sys
-    sys.path.append(r"d:\py_project\MRI\code\meta")
+    sys.path.append("~/MRI/code/meta")
     import train_classifier
     print("Syntax check passed")
 except ImportError as e:

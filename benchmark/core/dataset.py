@@ -1,6 +1,6 @@
 """
 Dataset, augmentation, and episodic sampling — extracted and adapted from
-D:\py_project\MRI\code\meta\train_classifier.py.
+~/MRI/code/meta/train_classifier.py.
 
 Key components:
     - MRIVolumeFolderDataset: Scans directories for .nii/.nii.gz, validates,
