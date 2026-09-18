@@ -1,0 +1,33 @@
+
+
+# --- Production Dependencies ---
+# Core Machine Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Medical Imaging & Data Processing
+nibabel>=5.1.0
+numpy
+scipy
+scikit-learn
+matplotlib
+
+# Mamba / State Space Models (Required for MedMamba models)
+# Note: Ensure CUDA environment is compatible before installing mamba_ssm
+mamba_ssm
+causal_conv1d
+
+# FLOPs calculation
+fvcore
+thop
+
+# Utilities & Logging
+PyYAML
+tensorboard
+higher
+
+# --- Development Dependencies ---
+# (No explicit dev dependencies detected in scanned files, but recommended)
+# pytest
+# black
+# flake8

@@ -1,0 +1,21 @@
+# Hybrid: Combined ANIL/MAML + ProtoNet meta-learning
+experiment:
+  method: "hybrid"
+
+model:
+  backbone: "medmamba_ss3m"
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+
+training:
+  lr: 5.0e-5
+  backbone_lr_ratio: 0.05
+  epochs: 160
+
+meta:
+  strategy:
+    name: "hybrid"
+    opt_weight: 0.5
+    metric_weight: 0.5
+    scheduler: "adaptive"

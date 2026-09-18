@@ -1,0 +1,98 @@
+# =============================================================
+# MRI MedMamba3D/SS3M  —  .gitignore
+# 只提交代码与文档;数据集、权重、虚拟环境、运行日志一律忽略。
+# =============================================================
+
+# ---- 数据集(含患者 MRI 影像,绝不上传)----
+*.nii
+*.nii.gz
+*.npy
+# benchmark 下的原始 / 预处理数据
+benchmark/Dataset/
+benchmark/Dataset_112_npy/
+benchmark/cache_112_npy/
+
+# ---- 模型权重 ----
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+weights/
+meta/weight/
+# 3DINO 自带权重
+3DINO/3dino_vit_weights.pth
+
+# ---- 虚拟环境与缓存 ----
+.venv/
+**/.venv/
+**/__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ---- 运行日志 / 临时输出 ----
+*_stdout.txt
+*_stdout (1).txt
+slurm-*.out
+*.log
+# 训练/实验产物目录
+meta/out/
+benchmark/logs/
+benchmark/traing/
+out/
+runs/
+runs_hpo/
+
+# ---- 中文研究文档(敏感,不上传)----
+# 根目录的中文 .md 研究/论文/评审/修改记录
+/*.md
+# 保留:README.md 由下面例外规则放行
+!/README.md
+# meta/ 内的中文论文 Word
+meta/*.docx
+# meta/ 内的实验评审/审计记录(中文内容)
+meta/AUC90_IMPLEMENTATION.md
+meta/CONFIG_COMPARISON_GUIDE.md
+meta/audit_holdout_7_1.5_1.5_split.md
+meta/ablation_experiments.md
+meta/AUC90_IMPLEMENTATION.md
+
+# ---- meta/ 实验迭代配置(只留代表性配置,其余不传)----
+# 保留:meta/config.yaml、meta/config_3T.yaml、meta/config_1p5T.yaml
+#       meta/config_ablation_mamba.yaml、meta/config_ablation_conv.yaml
+#       meta/config_ablation_dual.yaml、meta/config_ablation_no_pretrain.yaml
+# 忽略其余所有实验变体配置
+meta/config_*.yaml
+!meta/config_3T.yaml
+!meta/config_1p5T.yaml
+!meta/config_ablation_mamba.yaml
+!meta/config_ablation_conv.yaml
+!meta/config_ablation_dual.yaml
+!meta/config_ablation_no_pretrain.yaml
+
+# ---- 编辑器 / 临时交换文件 ----
+*.swp
+*.swo
+*.bak
+*.tmp
+# ---- 一次性测试草稿(仅 "hello",无内容)----
+/test.txt
+# figure 下仅保留架构示意图 pic.svg,其余草稿不传
+figure/*.txt
+
+# ---- AI 助手 / 编辑器私有目录 ----
+.mimocode/
+.claude/
+**/.mimocode/
+**/.claude/
+.idea/
+.vscode/
+
+# ---- 系统杂项 ----
+.DS_Store
+Thumbs.db
+
+# ---- 训练/输出根目录占位(若存在)----
+classifer/
+preprocessed/

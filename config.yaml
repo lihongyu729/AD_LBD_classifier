@@ -1,0 +1,194 @@
+# 输入与尺寸（D,H,W）
+input:
+  shape_dhw: [112, 112, 112]
+  spacing: [1.0, 1.0, 1.0]
+  format: "npy"        # "nii"(默认,NIfTI) | "npy"(预卷 .npy)——MAE 预训练数据格式
+  normalized: true     # npy 预卷已做脑区 Z-score（背景=0），加载时跳过再次归一化
+
+model:
+  patch_size: [16, 16, 16]
+  embed_dim: 128
+  depth: 12
+
+dataset:
+  folder_label_map:
+    AD: 0
+    LBD: 1
+    MCI: 2
+    NC: 3
+  allowed_labels: ['AD', 'LBD']
+  folder_file_exts:
+    - .nii
+    - .nii.gz
+  use_weighted_sampler: true
+  # 自动核心数策略：启用则根据CPU核心数自动分配num_workers（保留reserve_cores）
+  auto_num_workers: true
+  reserve_cores: 2
+  num_workers: 8   # 当 auto_num_workers=false 时使用该固定值
+
+paths:
+  out_dir: ./out
+  # MAE 预训练数据源(无标签,自监督)——112³ npy 四类全部参与预训练
+  # 改为相对/占位路径,指向实际存放 Dataset_112_npy 的位置(按机器调整)
+  label_roots:
+    AD: ./data/Dataset_112_npy/AD
+    LBD: ./data/Dataset_112_npy/LBD
+    MCI: ./data/Dataset_112_npy/MCI
+    NC: ./data/Dataset_112_npy/NC
+
+
+mae:
+  batch_size: 48
+  lr: 2.0e-4
+  weight_decay: 0.05
+  epochs: 300
+  decoder_dim: 128
+  ckpt_every: 5
+  warmup_epochs: 10
+  grad_accum_steps: 8
+  max_grad_norm: 1.0
+
+  mask_ratio_start: 0.5
+  mask_ratio_end: 0.75
+
+  probe_every: 5
+  probe_max_samples: 2048
+  probe_metric: bal_acc
+
+  log_every_steps: 0
+  heartbeat_sec: 0
+  step_log_to_console: false
+  step_log_to_file: false
+  enable_resource_report: false
+  invalid_batch_log_every: 50
+
+contrast:
+  batch_size: 4
+  lr: 1.0e-4
+  weight_decay: 0.05
+  epochs: 300
+  proj_dim: 256
+  proj_head: mlp2
+  temperature: 0.2
+  ckpt_every: 10
+  use_mae_init: true
+  mae_pretrained_path: "~/MRI/classifer/out/best_mae_8dir_768dim.pth"
+  use_labeled: true
+  balanced_sampler: true
+  loss_type: supcon
+  loss_weight: 1.0
+  augment_strength: 1.0
+  noise_scale: 0.02
+  crop_ratio: 0.9
+  minority_labels: ["LBD"]
+  minority_augment: 1.4
+  mixup_prob: 0.2
+  mixup_alpha: 0.2
+  eval_every: 5
+  eval_knn_k: 1
+  eval_recall_k: [1, 5, 10]
+  save_tsne: false
+  tsne_perplexity: 30.0
+  tsne_max_samples: 1000
+  best_metric: auc
+
+pipeline:
+  run_pretrain: false    # MAE 已训练完毕（loss=0.170），跳过以节省时间
+  run_contrastive: true  # 关键修复：启用对比学习，生成 contrast_best.pth
+  run_classifier: true   # 随后运行分类器微调
+
+classifier:
+  batch_size: 48
+  lr: 3.0e-4
+  weight_decay: 0.05
+  epochs: 100
+  ckpt_every: 10
+  pretrained_path: "~/MRI/classifer/out/best_mae_8dir_768dim.pth"  # 可填入MAE或对比预训练权重路径
+  grad_accum_steps: 1
+  print_every: 100   # increase default to avoid overly frequent logging
+  num_classes: 2
+  use_class_weights: true
+  loss: focal
+  focal_gamma: 2.0
+  label_smoothing: 0.0
+  scheduler: cosine # learning rate scheduler (plateau or cosine)
+  warmup_epochs: 5
+  tversky_alpha: 0.5
+  tversky_beta: 0.5
+  sampler: none
+  imbalance_mode: class_weight
+  eval_threshold: null
+  backbone: ss3m   # 新增：分类骨干选择（medmamba3d 或 ss3m）
+
+hpo:
+  enabled: false
+  algorithm: three_stage
+  max_epochs: 100
+  baseline_epochs: 5
+  eta: 3
+  trials: 25
+  bayes_trials: 6
+  ga_trials: 6
+  ga_mutate_prob: 0.2
+  folds: 3
+  final_folds: 5
+  final_epochs: 50
+  save_best_weights: true
+  runs_dir: runs
+  use_tensorboard: true
+  export_pdf: true
+  optim_target: auc
+  early_stop_patience: 15
+  early_stop_min_epochs: 3
+  early_stop_min_delta: 0.0
+  seed: 42
+  target_improve: 0.15
+  losses: ["ce", "focal", "dice", "tversky"]
+  search_space:
+    lr: [1.0e-5, 3.0e-4]
+    weight_decay: [1.0e-4, 1.0e-2]
+    batch_size: [2, 4]
+    depth: [2, 4]
+    embed_dim: [96]
+    dropout: [0.0, 0.2]
+    loss: ["ce", "focal"]
+    focal_gamma: [2.0]
+    tversky_alpha: [0.5]
+    tversky_beta: [0.5]
+    use_class_weights: [true]
+    sampler: ["none", "weighted"]
+    threshold: [0.5]
+
+eval:
+  probe_every: 10
+  probe_manifest: ""    # 可设置为 AD/LBD 的带标签清单CSV（推荐：preprocessed/data/merge_manifest.csv）
+  probe_column: n4_1mm
+  probe_batch: 2   # 从 4 降到 2：避免验证阶段显存峰值
+  label_map:
+    AD: 0
+    LBD: 1
+cv:
+  folds: 5
+  seed: 42
+  backbone: ss3m # 新增：MAE 预训练骨干选择（medmamba3d 或 ss3m）
+
+# ss3m 专属配置块，用于 MAE 预训练
+ss3m:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]  # 关键：大幅降低序列长度，从根源缓解OOM
+  use_checkpoint: true      # 关键：开启梯度检查点，用时间换空间
+  n_dirs_train: 8           # 关键：启用 8 向扫描，生成与元学习对齐的 SS3M 权重
+  
+  # Mamba 轻量化与分块配置 (不禁用Mamba，而是优化它)
+  d_state: 8                # Mamba 状态维度 (原版默认 16)，降低模型体积
+  expand: 1                 # Mamba 扩展因子 (原版默认 2)，降低计算量
+  chunk_len: 4096           # Mamba 序列分块长度，0为不分块。用此值将长序列切片处理，大幅降低峰值显存
+
+contrastive:
+  backbone: ss3m  # 新增：对比预训练骨干选择（medmamba3d 或 ss3m）
+  embed_dim: 96         # 显式指定：与默认一致即可
+  depth: 4              # 显式指定：与默认一致即可
+  patch_size: [16, 16, 16]  # 关键改动：极大缩短序列长度，消除 OOM 根因
+  use_checkpoint: true  # 开启梯度检查点，进一步降低显存占用
+  # 其他可选项（如 ssm_type/dropout/use_pos_emb/merge_type）保留默认即可

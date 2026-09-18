@@ -1,0 +1,19 @@
+# 3D ResNet: Adapted from DeepSPARE (GroupNorm for small batches)
+experiment:
+  method: "resnet3d"
+
+model:
+  backbone: "resnet3d"
+  in_channels: 1
+  num_classes: 2
+  depth: "18"
+  conv_kernel: 3
+  norm_type: "Group"
+  num_groups: 8
+  dropout: 0.3
+  pretrained_path: ""
+
+training:
+  lr: 1.0e-4
+  backbone_lr_ratio: 0.1
+  epochs: 120

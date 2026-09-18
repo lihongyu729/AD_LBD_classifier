@@ -1,0 +1,28 @@
+# MAML: Full model inner-loop adaptation with MedMambaSS3M
+experiment:
+  method: "maml"
+
+model:
+  backbone: "medmamba_ss3m"
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+
+training:
+  lr: 5.0e-5
+  backbone_lr_ratio: 0.05
+  epochs: 160
+
+meta:
+  strategy:
+    name: "maml"
+    inner_lr: 0.01
+    inner_steps: 3
+    first_order: true
+    dropout: 0.06
+    label_smoothing: 0.04
+    inner_label_smoothing: 0.03
+    focal_weight: 0.20
+    focal_gamma: 1.0
+    use_class_weights: false
+    max_inner_lr: 0.1

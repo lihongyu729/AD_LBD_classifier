@@ -1,0 +1,362 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1300" viewBox="0 0 2200 1300">
+<defs>
+<style>
+text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 14px; fill: #333; }
+.title { font-size: 20px; font-weight: 600; fill: #000; text-anchor: middle; }
+.subtitle { font-size: 16px; font-weight: 600; fill: #555; text-anchor: middle; }
+.shape { fill: #666; font-size: 12px; font-style: italic; text-anchor: middle; }
+.param { fill: #f57c00; font-size: 12px; }
+.subscript { font-size: 10px; }
+rect { stroke-width: 1.5; rx: 6px; ry: 6px; fill: none; }
+path { stroke-width: 1.5; fill: none; }
+.main-path { stroke: #00796b; stroke-width: 2.5; }
+.aux-path { stroke: #bdbdbd; stroke-dasharray: 4, 3; }
+.res-path { stroke: #0288d1; stroke-dasharray: 6, 4; stroke-width: 1.5;}
+.block-rect { fill: #e0f2f1; stroke: #00796b; }
+.comp-rect { fill: #fff; stroke: #80cbc4; }
+.op-rect { fill: #fff3e0; stroke: #f57c00; }
+.res-circle { fill: #e1f5fe; stroke: #0288d1; stroke-width: 1.5; }
+.opt-rect { stroke-dasharray: 5, 5; }
+marker { stroke: none; }
+marker polygon { fill-rule: evenodd; }
+.formula-text { font-size: 13px; fill: #555; font-style: italic;}
+</style>
+<linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#fcfcfc;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+</linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+<polygon points="0,0 10,5 0,10" fill="#00796b"/>
+</marker>
+<marker id="arrow-aux" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+<polygon points="0,0 10,5 0,10" fill="#bdbdbd"/>
+</marker>
+<marker id="arrow-res" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+<polygon points="0,0 10,5 0,10" fill="#0288d1"/>
+</marker>
+</defs>
+
+<rect width="100%" height="100%" fill="url(#mainGrad)" />
+
+<text x="1100" y="40" class="title">MedMamba-SS3M: A 3D Multi-View State Space Model Backbone for Medical Image Analysis</text>
+
+<g transform="translate(1950, 60)">
+<text x="0" y="0" style="font-weight:600">Legend</text>
+
+
+<path class="main-path" marker-end="url(#arrow)" d="M0,25 L30,25"/><text x="35" y="30">Main Data Flow</text>
+<path class="res-path" marker-end="url(#arrow-res)" d="M0,50 L30,50"/><text x="35" y="55">Residual / Fusion Flow</text>
+<path class="aux-path" marker-end="url(#arrow-aux)" d="M0,75 L30,75"/><text x="35" y="80">Auxiliary / Side Flow</text>
+
+<rect x="0" y="95" width="20" height="20" class="block-rect"/><text x="30" y="110">MedMamba Block</text>
+<rect x="0" y="125" width="20" height="20" class="comp-rect"/><text x="30" y="140">Module / Op</text>
+<rect x="0" y="155" width="20" height="20" class="opt-rect" stroke="#80cbc4"/><text x="30" y="170">Optional Component</text>
+<circle cx="10" cy="195" r="10" class="res-circle"/><text x="30" y="200">Addition (C-wise)</text>
+
+<text x="0" y="230" class="param">Hyperparameter</text>
+
+
+</g>
+
+<g transform="translate(80, 200)">
+<text x="90" y="-30" class="subtitle">1. Input &amp; Patch Embedding</text>
+
+
+<rect x="0" y="0" width="180" height="120" stroke="#ccc" fill="#fcfcfc" style="stroke-dasharray: 2, 2; rx: 0; ry: 0;"/>
+<image x="10" y="10" width="80" height="100" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2QxZDVkNSIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMzMzIj4zRCBNUkk8L3RleHQ+PC9zdmc+" />
+<text x="135" y="50" class="shape">[B, 1, 32, 64, 64]</text>
+<text x="135" y="70" style="text-anchor: middle;">3D Volume</text>
+<text x="135" y="90" style="text-anchor: middle; font-size: 11px;">(C=1)</text>
+
+<path class="main-path" marker-end="url(#arrow)" d="M180,60 L240,60"/>
+
+<g transform="translate(240, 20)">
+  <rect x="0" y="0" width="140" height="80" class="comp-rect"/>
+  <text x="70" y="30" style="text-anchor: middle; font-weight: 600;">PatchEmbed3D</text>
+  <text x="10" y="55" class="param">k=(2,2,2)</text>
+  <text x="10" y="70" class="param">s=(2,2,2)</text>
+  <text x="80" y="65" style="font-size: 12px;">Conv3D</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M380,60 L440,60"/>
+
+<g transform="translate(440, 0)">
+  <rect x="0" y="0" width="150" height="120" stroke="#90a4ae" fill="#eceff1" class="opt-rect"/>
+  <text x="75" y="25" style="text-anchor: middle; font-weight: 600;">Optional LN</text>
+  <path class="aux-path" marker-end="url(#arrow-aux)" d="M10,40 L140,40"/>
+  <text x="75" y="38" style="text-anchor: middle; font-size: 12px; fill: #757575;">Permute BCDHW -&gt; BDHW C</text>
+  <rect x="25" y="55" width="100" height="30" style="fill: #e0f2f1; stroke: #80cbc4; stroke-width: 1;"/>
+  <text x="75" y="75" style="text-anchor: middle;">LayerNorm(C)</text>
+  <path class="aux-path" marker-end="url(#arrow-aux)" d="M10,100 L140,100"/>
+  <text x="75" y="98" style="text-anchor: middle; font-size: 12px; fill: #757575;">Permute BDHW C -&gt; BCDHW</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M590,60 L650,60"/>
+<text x="620" y="50" class="shape">[B, E, 16, 32, 32]</text>
+
+
+</g>
+
+<g transform="translate(80, 380)">
+<text x="500" y="-30" class="subtitle">2. SS3M Backbone: Repeated SS3MBlock3D-Dual</text>
+
+
+<rect x="650" y="0" width="300" height="120" class="block-rect"/>
+<text x="800" y="35" style="text-anchor: middle; font-weight: 600; font-size: 16px;">MedMamba Stage</text>
+<rect x="670" y="50" width="260" height="50" style="fill: #fff; stroke: #00796b;"/>
+<text x="800" y="80" style="text-anchor: middle; font-weight: 600; font-size: 20px;">脳N</text>
+<text x="910" y="65" class="param">depth=4</text>
+
+<path class="main-path" marker-end="url(#arrow)" d="M950,60 L1010,60"/>
+<text x="980" y="50" class="shape">[B, E, 16, 32, 32]</text>
+
+<path class="res-path" marker-end="url(#arrow-res)" d="M630,60 C630,-20 970,-20 970,60"/>
+
+
+</g>
+
+<g transform="translate(80, 520)">
+<text x="100" y="10" class="subtitle" style="text-anchor:start">N<subscript>th</subscript> SS3MBlock3D-Dual (Inset)</text>
+
+
+<rect x="0" y="30" width="1800" height="600" style="fill: #fcfcfc; stroke: #999; stroke-width: 1;"/>
+<line x1="100" y1="30" x2="650" y2="-20" style="stroke: #999; stroke-width: 1; stroke-dasharray: 2, 2;"/>
+<line x1="800" y1="30" x2="950" y2="-20" style="stroke: #999; stroke-width: 1; stroke-dasharray: 2, 2;"/>
+
+<text x="40" y="125" class="shape">[B, E, 16, 32, 32]</text>
+<circle cx="40" cy="140" r="15" class="res-circle"/>
+<text x="40" y="145" style="text-anchor: middle; font-weight: 600; font-size: 20px;">+</text>
+
+<path class="main-path" marker-end="url(#arrow)" d="M55,140 L120,140"/>
+
+<g transform="translate(120, 100)">
+  <rect x="0" y="0" width="120" height="80" class="comp-rect"/>
+  <text x="60" y="35" style="text-anchor: middle;">Pre-Norm</text>
+  <text x="60" y="55" style="text-anchor: middle; font-size: 11px;">(BDHW C -&gt; LN -&gt; BCDHW)</text>
+</g>
+
+<path class="aux-path" d="M180,210 L180,180"/>
+<g transform="translate(120, 210)">
+  <rect x="0" y="0" width="120" height="60" style="fill: #e0f2f1; stroke: #bdbdbd;"/>
+  <text x="60" y="25" style="text-anchor: middle;">Learnable Pos</text>
+  <text x="60" y="45" class="shape">[1, E, 16, 32, 32]</text>
+</g>
+<circle cx="180" cy="210" r="10" class="res-circle"/>
+<text x="180" y="214" style="text-anchor: middle; font-weight: 600;">+</text>
+
+<path class="main-path" marker-end="url(#arrow)" d="M240,140 L300,140"/>
+
+<g transform="translate(300, 80)">
+  <rect x="0" y="0" width="220" height="120" class="comp-rect"/>
+  <text x="110" y="25" style="text-anchor: middle; font-weight: 600;">3D 8-Dir Augmentation</text>
+  <text x="110" y="45" style="text-anchor: middle; font-size: 12px; fill: #666;">Apply flips per dir {d,h,w 鈭?0,1}</text>
+  <text x="110" y="65" class="param">n_dirs=8</text>
+  <rect x="20" y="80" width="180" height="30" class="op-rect"/>
+  <text x="110" y="100" style="text-anchor: middle;">Vol2Seq per Dir</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M520,140 L580,140"/>
+<text x="550" y="130" class="shape">[B, L, E]</text>
+
+<g transform="translate(580, 80)">
+  <rect x="0" y="0" width="120" height="120" class="comp-rect"/>
+  <text x="60" y="50" style="text-anchor: middle;">Batch Concat</text>
+  <text x="60" y="70" class="shape">[8*B, L, E]</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M700,140 L760,140"/>
+
+<g transform="translate(760, 40)">
+  <text x="50" y="0" class="subtitle" style="text-anchor:start">Dual Sequence Modeling</text>
+  <path class="aux-path" d="M0,100 L50,60" marker-end="url(#arrow-aux)"/>
+  <path class="aux-path" d="M0,100 L50,140" marker-end="url(#arrow-aux)"/>
+  <text x="25" y="70" style="fill: #bdbdbd; font-size: 12px;">Split</text>
+  
+  <g transform="translate(50, 0)">
+    <rect x="0" y="0" width="220" height="100" style="fill: #e1f5fe; stroke: #0288d1;"/>
+    <text x="110" y="30" style="text-anchor: middle; font-weight: 600; fill: #0277bd;">Branch A (SeqSSM-A)</text>
+    <rect x="10" y="50" width="200" height="40" style="fill: #fff; stroke: #0288d1; stroke-dasharray: 3, 3;"/>
+    <text x="110" y="75" style="text-anchor: middle;">Submodule Detail Below</text>
+  </g>
+  
+  <g transform="translate(50, 120)">
+    <rect x="0" y="0" width="220" height="100" class="opt-rect" stroke="#fb8c00" fill="#fff3e0"/>
+    <text x="110" y="30" style="text-anchor: middle; font-weight: 600; fill: #ef6c00;">Branch B (SeqSSM-B)</text>
+    <text x="10" y="55" class="param">Optional:</text>
+    <text x="10" y="70" class="param">different params, type,</text>
+    <text x="10" y="85" class="param">or single-branch</text>
+  </g>
+  
+  <path class="aux-path" d="M270,60 L320,100" marker-end="url(#arrow-aux)"/>
+  <path class="aux-path" d="M270,160 L320,100" marker-end="url(#arrow-aux)"/>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M1080,140 L1140,140"/>
+
+<g transform="translate(1140, 80)">
+  <rect x="0" y="0" width="240" height="120" class="comp-rect"/>
+  <text x="120" y="25" style="text-anchor: middle; font-weight: 600;">Back to Voxel &amp; Align</text>
+  <text x="10" y="50" class="param">per Dir:</text>
+  <text x="20" y="65">1. Seq2Vol (permute, reshape)</text>
+  <text x="20" y="80">2. Inverse Flip to align space</text>
+  <text x="120" y="105" class="shape">[8*B, E, 16, 32, 32]</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M1380,140 L1440,140"/>
+
+<g transform="translate(1440, 80)">
+  <rect x="0" y="0" width="180" height="120" class="comp-rect"/>
+  <text x="90" y="25" style="text-anchor: middle; font-weight: 600;">8-Dir Fusion (x2)</text>
+  <text x="90" y="45" style="text-anchor: middle;">Weighted Sum</text>
+  <rect x="10" y="60" width="160" height="40" class="op-rect"/>
+  <text x="90" y="78" style="text-anchor: middle;">Softmax(dir_logits)</text>
+  <text x="90" y="93" style="text-anchor: middle;">or Average</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M1620,140 L1680,140"/>
+
+<g transform="translate(1680, 80)">
+  <rect x="0" y="0" width="160" height="120" style="fill: #e1f5fe; stroke: #0288d1;"/>
+  <text x="80" y="25" style="text-anchor: middle; font-weight: 600;">Branch Fusion</text>
+  <path class="res-path" d="M10,50 L150,50"/>
+  <text x="80" y="48" style="text-anchor: middle; font-size: 11px; fill: #0277bd;">A + B</text>
+  <text x="10" y="70" class="param">Fusion:</text>
+  <text x="20" y="85">weighted sum via</text>
+  <text x="20" y="100">Softmax(branch_logits)</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M1840,140 C1900,140 1900,140 1900,140"/>
+
+<path class="main-path" d="M1840,140 L1880,140"/>
+<path class="res-path" d="M1880,140 L1880,680" marker-end="url(#arrow-res)"/>
+<path class="res-path" d="M40,155 L40,680 L1880,680"/>
+
+<circle cx="1880" cy="700" r="20" class="res-circle"/>
+<text x="1880" y="707" style="text-anchor: middle; font-weight: 600; font-size: 26px;">+</text>
+<path class="main-path" d="M1880,720 L1880,760" marker-end="url(#arrow)"/>
+<text x="1880" y="780" style="text-anchor: middle; font-weight: 600;">Block Output</text>
+<text x="1880" y="800" class="shape">[B, E, 16, 32, 32]</text>
+
+
+</g>
+
+<g transform="translate(80, 1000)">
+<text x="400" y="-30" class="subtitle">3. SeqSSM Submodule Variations (Sequence Modeling on [L, E])</text>
+
+
+<g transform="translate(0, 0)">
+  <rect x="0" y="0" width="400" height="240" class="comp-rect"/>
+  <text x="200" y="25" style="text-anchor: middle; font-weight: 600;">Conv Variation (Default)</text>
+  
+  <text x="10" y="55">1. Pre-Norm (L,E) C-wise</text>
+  <rect x="10" y="70" width="380" height="110" style="stroke: #bdbdbd; rx:0; ry:0;"/>
+  <text x="15" y="90" style="font-weight: 600;">脳depth=2</text>
+  <g transform="translate(20, 100)">
+    <rect x="0" y="0" width="100" height="30" class="op-rect"/>
+    <text x="50" y="20" style="text-anchor: middle;">Conv1D(1x1)</text>
+    <text x="50" y="45" class="shape">E -&gt; 2E</text>
+    
+    <path class="aux-path" marker-end="url(#arrow-aux)" d="M100,15 L120,15"/>
+    <g transform="translate(120, 0)">
+      <rect x="0" y="0" width="80" height="30" class="op-rect"/>
+      <text x="40" y="20" style="text-anchor: middle;">GLU (Gate)</text>
+      <text x="40" y="45" class="shape">2E -&gt; E</text>
+    </g>
+    
+    <path class="res-path" marker-end="url(#arrow-res)" d="M10,0 C10,-20 190,-20 190,0"/>
+  </g>
+  
+  <text x="10" y="205">2. FFN: Linear(4E) + GELU + Linear(E)</text>
+  <text x="10" y="225">3. Dropout + Resid</text>
+</g>
+
+<g transform="translate(450, 0)">
+  <rect x="0" y="0" width="400" height="240" class="opt-rect" stroke="#00796b" fill="#e0f2f1"/>
+  <text x="200" y="25" style="text-anchor: middle; font-weight: 600; fill: #004d40;">Mamba Variation (Optional)</text>
+  
+  <path class="aux-path" marker-end="url(#arrow-aux)" d="M30,70 L100,70"/><text x="10" y="75">In</text>
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="200" height="60" style="fill: #fff; stroke: #80cbc4;"/>
+    <text x="100" y="35" style="text-anchor: middle; font-weight: 600;">Mamba Block</text>
+    <text x="10" y="55" class="param">d_state=16</text>
+    <text x="80" y="55" class="param">d_conv=4</text>
+    <text x="140" y="55" class="param">expand=2</text>
+  </g>
+  <path class="aux-path" marker-end="url(#arrow-aux)" d="M300,70 L370,70"/>
+  
+  <path class="res-path" marker-end="url(#arrow-res)" d="M50,70 C50,20 350,20 350,70"/>
+  
+  <rect x="50" y="150" width="300" height="70" class="opt-rect" fill="#fff" stroke="#ffb74d"/>
+  <text x="150" y="175" style="text-anchor: middle; font-weight: 600; fill: #ef6c00;">Optional Chunked Inference</text>
+  <text x="150" y="195" style="text-anchor: middle; font-size:12px;">Process Seq in memory-efficient chunks</text>
+</g>
+
+
+</g>
+
+<g transform="translate(1450, 100)">
+<text x="200" y="-30" class="subtitle">4. Backbone Output &amp; Task Heads</text>
+
+
+<g transform="translate(0, 0)">
+  <rect x="0" y="0" width="100" height="60" class="comp-rect"/>
+  <text x="50" y="30" style="text-anchor: middle; font-weight: 600;">Backbone Out</text>
+  <text x="50" y="50" class="shape">[B, E, 16, 32, 32]</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M100,30 L160,30"/>
+
+<g transform="translate(160, 10)">
+  <rect x="0" y="0" width="100" height="40" class="op-rect"/>
+  <text x="50" y="25" style="text-anchor: middle;">BatchNorm3D</text>
+</g>
+
+<path class="main-path" marker-end="url(#arrow)" d="M260,30 L300,30"/>
+
+<g transform="translate(300, 0)">
+  <text x="0" y="-10" style="font-weight:600">MedMambaSS3M (Cls)</text>
+  <rect x="0" y="0" width="100" height="150" style="fill:#e1f5fe; stroke:#0288d1; rx:4;ry:4;"/>
+  <text x="50" y="30" style="text-anchor: middle;">Vol2Seq</text>
+  <text x="50" y="70" style="text-anchor: middle; font-weight:600;">Token GAP</text>
+  <text x="50" y="110" style="text-anchor: middle;">Linear Head</text>
+  
+  <text x="110" y="125" class="shape">[B, num_classes]</text>
+  <text x="110" y="140">Predictions</text>
+</g>
+
+<g transform="translate(300, 180)">
+  <text x="0" y="-10" style="font-weight:600">MedMambaSS3MEncoder</text>
+  <rect x="0" y="0" width="100" height="110" style="fill:#e0f2f1; stroke:#00796b; rx:4;ry:4;"/>
+  <text x="50" y="40" style="text-anchor: middle; font-weight:600;">Spatial GAP</text>
+  <text x="50" y="60" style="text-anchor: middle; font-size:12px;">(on D',H',W')</text>
+  
+  <text x="110" y="85" class="shape">[B, E]</text>
+  <text x="110" y="100">Features</text>
+</g>
+
+<g transform="translate(300, 320)">
+  <text x="0" y="-10" style="font-weight:600">MedMambaSS3MContrast</text>
+  <rect x="0" y="0" width="100" height="150" style="fill:#fff3e0; stroke:#f57c00; rx:4;ry:4;"/>
+  <text x="50" y="30" style="text-anchor: middle;">Encoder [B,E]</text>
+  <text x="50" y="70" style="text-anchor: middle; font-weight:600;">Proj MLP</text>
+  <text x="50" y="110" style="text-anchor: middle;">L2 Normalize</text>
+  
+  <text x="110" y="125" class="shape">[B, proj_dim]</text>
+  <text x="110" y="140">Embeddings</text>
+</g>
+
+<path class="aux-path" marker-end="url(#arrow-aux)" d="M280,30 L280,400 L300,400"/>
+<path class="aux-path" d="M280,240 L300,240"/>
+
+
+</g>
+
+<g transform="translate(1000, 1150)">
+<text x="0" y="0" class="subtitle" style="text-anchor:start">Definitions &amp; Notations</text>
+<text x="10" y="30" class="formula-text">鈥?L = D' 脳 H' 脳 W'</text>
+<text x="10" y="55" class="formula-text">鈥?y<subscript>dir</subscript> = 危<subscript>i=1</subscript><supscript>8</supscript> Softmax(伪<subscript>i</subscript>) 路 y<subscript>i</subscript> <tspan style="font-size:11px; font-style:normal;">(where 伪 are direction logits)</tspan></text>
+<text x="10" y="80" class="formula-text">鈥?y<subscript>dual</subscript> = Softmax(尾<subscript>A</subscript>) 路 y<subscript>A</subscript> + Softmax(尾<subscript>B</subscript>) 路 y<subscript>B</subscript> <tspan style="font-size:11px; font-style:normal;">(where 尾 are branch logits)</tspan></text>
+<text x="10" y="105" class="formula-text">鈥?GAP = Global Average Pooling</text>
+</g>
+
+</svg>

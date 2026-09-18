@@ -1,0 +1,89 @@
+# ===========================================================================
+# AD vs LBD Benchmark — 运行命令速查（默认嵌套5折CV）
+# ===========================================================================
+# 数据路径: ~/split_1mm_112/{AD, LBD}/
+# 默认模式: 锁20%测试集 + 内部5折CV = 嵌套CV
+# 纯CV模式: 加 --holdout-test 0.0 或 --pure
+# ===========================================================================
+
+# ===========================================================================
+# ★ 一键运行（推荐！默认嵌套CV）
+# ===========================================================================
+bash run_all.sh                     # 全部13方法 × 3种子（嵌套CV）
+bash run_all.sh --quick             # 快速冒烟测试 (2-fold, 3-epoch)
+bash run_all.sh --pure              # 纯5折CV（不做holdout拆分）
+bash run_all.sh --group A           # 只跑 Group A（元学习策略）
+bash run_all.sh --group B           # 只跑 Group B（骨干网络）
+
+# ===========================================================================
+# ★ screen + 一键脚本（断开SSH不中断）
+# ===========================================================================
+screen -S benchmark
+conda activate cnn
+bash run_all.sh
+# 按 Ctrl+A 再按 D 断开
+# screen -r benchmark   ← 重新连接
+
+# ===========================================================================
+# 分步运行（默认嵌套CV）
+# ===========================================================================
+
+# ——— 1. 检查环境 ——————————————————————————————————————————————————
+python scripts/check_data.py
+python -c "import torch; print(f'CUDA={torch.cuda.is_available()}, GPU={torch.cuda.get_device_name(0)}')"
+
+# ——— 2. 快速冒烟测试 —————————————————————————————————————————————
+bash run_all.sh --quick
+
+# ——— 3. Group A: 元学习策略对比 (5方法 × 3种子) ————————————————
+screen -S groupA
+conda activate cnn
+python scripts/run_batch.py --group A --seeds 42,123,456 --gpus 0 --resume
+
+# ——— 4. Group B: 骨干网络对比 (8方法 × 3种子) ————————————————
+screen -S groupB
+conda activate cnn
+python scripts/run_batch.py --group B --seeds 42,123,456 --gpus 0 --resume
+
+# ——— 5. 纯5折CV（不做holdout，快速对比用） ———————————————————————
+python scripts/run_batch.py --group A --seeds 42 --holdout-test 0.0 --gpus 0 --resume
+
+# ——— 6. 消融实验（所有消融默认嵌套CV） —————————————————————————————
+# Conv-only
+python scripts/run_single.py --method anil --seed 42 --gpu 0 \
+    --note "conv_only" \
+    --set ss3m.use_dual_branch=false --set ss3m.branch_types='["conv","conv"]'
+
+# Mamba-only
+python scripts/run_single.py --method anil --seed 42 --gpu 0 \
+    --note "mamba_only" \
+    --set ss3m.use_dual_branch=false --set ss3m.branch_types='["mamba","mamba"]'
+
+# 随机初始化(无预训练)
+python scripts/run_single.py --method anil --seed 42 --gpu 0 \
+    --note "no_pretrain" --set model.pretrained_path=""
+
+# 等权平均融合
+python scripts/run_single.py --method anil --seed 42 --gpu 0 \
+    --note "avg_fusion" --set ss3m.merge_type=avg
+
+# 方向数对比
+python scripts/run_single.py --method anil --seed 42 --gpu 0 \
+    --note "n_dirs_4" --set ss3m.n_dirs_train=4
+python scripts/run_single.py --method anil --seed 42 --gpu 0 \
+    --note "n_dirs_2" --set ss3m.n_dirs_train=2
+
+# ——— 7. 生成对比报告 ——————————————————————————————————————————————
+python scripts/generate_report.py --input ./results --output ./reports
+
+# ——— 8. 工具命令 ———————————————————————————————————————————————————
+python scripts/run_single.py --list-methods    # 查看所有方法
+python scripts/run_batch.py --group B --seeds 42 --gpus 0 --dry-run   # 预览任务
+screen -ls                                      # 查看所有screen会话
+
+# ===========================================================================
+# screen 速查
+# ===========================================================================
+# screen -S name    创建会话        Ctrl+A D    断开
+# screen -r name    重新连接        screen -ls  查看列表
+# ===========================================================================

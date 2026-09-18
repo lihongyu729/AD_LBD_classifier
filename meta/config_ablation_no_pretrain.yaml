@@ -1,0 +1,173 @@
+# 消融实验 — 移除 MAE 预训练（随机初始化）
+# 参数与基线 config_ablation_baseline.yaml 完全一致，仅 pretrained_path 置空
+meta_learning:
+  three_loyal_strategies:
+    optimizer_strategy:
+      name: anil
+      enable: true
+      params:
+        inner_lr: 0.01
+        inner_steps: 4
+        first_order: true
+        dropout: 0.06
+        label_smoothing: 0.03
+        inner_label_smoothing: 0.03
+        focal_weight: 0.1
+        focal_gamma: 1.0
+        use_class_weights: true
+        inner_use_class_weights: true
+        max_inner_lr: 0.08
+        supcon_weight: 0.2
+        supcon_temperature: 0.07
+    metric_strategy:
+      name: protonet
+      enable: false
+      params:
+        metric: cosine
+        proj_dim: 16
+        gamma: 0.0
+        temperature: 15.0
+        label_smoothing: 0.03
+    hybrid_strategy:
+      name: hybrid
+      enable: false
+      params:
+        opt_weight: 0.5
+        metric_weight: 0.5
+        scheduler: linear
+task:
+  n_way: 2
+  k_shot: 4
+  q_query: 4
+  train_episodes_override: 0
+  min_train_episodes: 40
+  max_train_episodes: 96
+  max_minority_reuse_per_epoch: 4.2
+  min_epoch_coverage_ratio: 0.85
+  val_episodes_meta: 120
+  allow_unsafe_episode_override: false
+ss3m:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+  branch_types: ["conv", "mamba"]
+  use_checkpoint: true
+  dropout: 0.0
+  use_pos_emb: true
+  merge_type: softmax
+input:
+  shape_dhw: [112, 112, 112]
+model:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+classifier:
+  backbone: medmamba_ss3m
+  strategy: meta
+  use_amp: true
+  amp_dtype: bf16
+  use_compile: false
+  epochs: 160
+  batch_size: 4
+  lr: 0.0001
+  weight_decay: 0.015
+  freeze_backbone: false
+  warmup_epochs: 8
+  lr_scheduler: cosine
+  lr_factor: 0.5
+  lr_patience: 6
+  label_smoothing: 0.02
+  ema_decay: 0.998
+  max_grad_norm: 0.7
+  grad_accum_steps: 1
+  pretrained_path: ""              # <======== 唯一改动：移除MAE预训练
+  pretrained_auto_scan_siblings: false
+  use_class_weights: true
+  freeze_bn: false
+  backbone_norm: batchnorm
+  backbone_norm_groups: 8
+  head_type: linear
+  head_temperature: 1.0
+  head_hidden_dim: 256
+  head_dropout: 0.08
+  head_activation: silu
+  backbone_n_dirs_train: 8
+  backbone_use_dual_branch: true
+  backbone_lr_ratio: 0.08
+  pretrained_failfast_min_ratio: 0.0
+  pretrained_warn_ratio: 0.0
+metrics:
+  - acc
+  - auc
+  - f1_macro
+  - f1_weighted
+  - precision_macro
+  - recall_macro
+  - confusion_matrix
+early_stopping:
+  patience: 30
+  min_delta: 0.0
+  monitor: val_raw_auc
+  min_lbd_sens: 0.6
+  gate_blocking: false
+imbalance:
+  mode: auto
+  class_weight_mode: effective_num
+  class_weight_beta: 0.995
+  respect_episode_balance: true
+  balanced_episode_focal_weight: 0.05
+thresholding:
+  allow_tuned_early_stop: false
+  calib_fraction: 0.3
+  split_seed: 42
+logging:
+  tensorboard: false
+debug:
+  enabled: false
+  epochs: 1
+  folds: 1
+stability:
+  safe_mode: false
+  cudnn_benchmark: true
+  cudnn_deterministic: false
+dataset:
+  folder_label_map:
+    AD: 0
+    LBD: 1
+  allowed_labels: ['AD', 'LBD']
+  num_workers: 4
+  use_weighted_sampler: false
+  label_map:
+    AD: 0
+    LBD: 1
+  label_column_path: path
+  label_column_class: label
+  folder_fileexts: [".nii", ".nii.gz"]
+  folder_require_substring: null
+preprocess_cache:
+  enabled: true
+  cache_dir: ~/MRI/pretrain/code/meta/cache
+augment:
+  enable: true
+  flip_p: 0.3
+  noise_std: 0.02
+  gamma_jitter: 0.08
+  cutout_p: 0.08
+  cutout_frac: 0.08
+paths:
+  out_dir: ~/MRI/pretrain/code/meta/out/ablation
+  label_roots:
+    AD: ~/split_1mm_112/AD
+    LBD: ~/split_1mm_112/LBD
+    MCI: ~/split_1mm_112/MCI
+cv:
+  cv_n_splits: 5
+  run_folds: 5
+  cv_shuffle: true
+  cv_random_state: 42
+  stratified: true
+  sample_fraction: 1.0
+  quick_folds: 2
+device:
+  force: "cuda"
+  cuda_device: 0

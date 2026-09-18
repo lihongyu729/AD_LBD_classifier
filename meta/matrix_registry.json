@@ -1,0 +1,158 @@
+[
+  {
+    "name": "v2_00_baseline_ref",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_00_baseline_ref.yaml",
+    "notes": "Reference from current config.",
+    "overrides": {}
+  },
+  {
+    "name": "v2_01_focal50_innerlr3e3",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_01_focal50_innerlr3e3.yaml",
+    "notes": "Lower inner LR + focal to reduce oscillation.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.0,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_lr": 0.003,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_steps": 3,
+      "classifier.backbone_lr_ratio": 0.06
+    }
+  },
+  {
+    "name": "v2_02_focal50_innersteps5",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_02_focal50_innersteps5.yaml",
+    "notes": "More adaptation steps, slightly lower backbone LR ratio.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.0,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_lr": 0.004,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_steps": 5,
+      "classifier.backbone_lr_ratio": 0.05
+    }
+  },
+  {
+    "name": "v2_03_cov90_k4q4_val120",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_03_cov90_k4q4_val120.yaml",
+    "notes": "Coverage-focused stable episode setting.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.0,
+      "task.k_shot": 4,
+      "task.q_query": 4,
+      "task.min_epoch_coverage_ratio": 0.9,
+      "task.max_train_episodes": 140,
+      "task.min_train_episodes": 24,
+      "task.max_minority_reuse_per_epoch": 4.0,
+      "task.val_episodes_meta": 120
+    }
+  },
+  {
+    "name": "v2_04_cov90_k5q5_val120",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_04_cov90_k5q5_val120.yaml",
+    "notes": "Larger episode tasks to test representation limits.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.0,
+      "task.k_shot": 5,
+      "task.q_query": 5,
+      "task.min_epoch_coverage_ratio": 0.9,
+      "task.max_train_episodes": 120,
+      "task.min_train_episodes": 24,
+      "task.max_minority_reuse_per_epoch": 4.0,
+      "task.val_episodes_meta": 120
+    }
+  },
+  {
+    "name": "v2_05_aug_mid",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_05_aug_mid.yaml",
+    "notes": "Mid-strength augmentation for minority generalization.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.0,
+      "augment.noise_std": 0.05,
+      "augment.gamma_jitter": 0.15,
+      "augment.cutout_p": 0.3,
+      "augment.cutout_frac": 0.15
+    }
+  },
+  {
+    "name": "v2_06_aug_high",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_06_aug_high.yaml",
+    "notes": "High-strength augmentation for robustness stress test.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.0,
+      "augment.noise_std": 0.06,
+      "augment.gamma_jitter": 0.18,
+      "augment.cutout_p": 0.4,
+      "augment.cutout_frac": 0.15
+    }
+  },
+  {
+    "name": "v2_07_combo_balanced",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_07_combo_balanced.yaml",
+    "notes": "Balanced combo expected to improve mean and worst-fold AUC.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_lr": 0.003,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_steps": 5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.label_smoothing": 0.12,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_label_smoothing": 0.12,
+      "classifier.backbone_lr_ratio": 0.04,
+      "task.k_shot": 4,
+      "task.q_query": 4,
+      "task.min_epoch_coverage_ratio": 0.9,
+      "task.max_train_episodes": 140,
+      "task.min_train_episodes": 24,
+      "task.val_episodes_meta": 120,
+      "augment.noise_std": 0.05,
+      "augment.gamma_jitter": 0.15,
+      "augment.cutout_p": 0.3,
+      "augment.cutout_frac": 0.15
+    }
+  },
+  {
+    "name": "v2_08_combo_conservative",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_08_combo_conservative.yaml",
+    "notes": "Conservative combo for stability-first runs.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.35,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.0,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_lr": 0.004,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_steps": 3,
+      "classifier.backbone_lr_ratio": 0.03,
+      "task.k_shot": 4,
+      "task.q_query": 4,
+      "task.min_epoch_coverage_ratio": 0.9,
+      "task.max_train_episodes": 120,
+      "task.min_train_episodes": 24,
+      "task.val_episodes_meta": 100,
+      "augment.noise_std": 0.04,
+      "augment.gamma_jitter": 0.12,
+      "augment.cutout_p": 0.2,
+      "augment.cutout_frac": 0.12
+    }
+  },
+  {
+    "name": "v2_09_combo_aggressive",
+    "config": "~/MRI/pretrain/code/meta/out/auc90_matrix/v2_20260413_150250/configs/v2_09_combo_aggressive.yaml",
+    "notes": "Aggressive exploration for higher ceiling.",
+    "overrides": {
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_weight": 0.75,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.focal_gamma": 2.5,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_lr": 0.0025,
+      "meta_learning.three_loyal_strategies.optimizer_strategy.params.inner_steps": 5,
+      "classifier.backbone_lr_ratio": 0.02,
+      "task.k_shot": 5,
+      "task.q_query": 5,
+      "task.min_epoch_coverage_ratio": 0.9,
+      "task.max_train_episodes": 140,
+      "task.min_train_episodes": 24,
+      "task.val_episodes_meta": 150,
+      "augment.noise_std": 0.06,
+      "augment.gamma_jitter": 0.18,
+      "augment.cutout_p": 0.4,
+      "augment.cutout_frac": 0.15
+    }
+  }
+]

@@ -1,0 +1,62 @@
+# ===========================================================================
+# Shared RERUN protocol — applied to ALL experiments so that every model is
+# trained with the same schedule/CV/early-stopping/augmentation, differing only
+# by the experimental variable (method / strategy / fusion / n_dirs / embed_dim
+# / backbone / ablation factor).
+#
+# Loaded by scripts/run_single.py AFTER the method config (overrides it).
+# lr / backbone_lr_ratio are intentionally left per-method (SS3M-family 5e-5,
+# CNN backbones 1e-4 — each architecture's designed lr), everything else here
+# is uniform.
+# ===========================================================================
+
+training:
+  epochs: 160
+  batch_size: 4
+  warmup_epochs: 10
+  lr_scheduler: "cosine"
+  weight_decay: 0.05
+  label_smoothing: 0.05
+  ema_decay: 0.99
+  max_grad_norm: 0.7
+  grad_accum_steps: 1
+  use_amp: true
+  amp_dtype: "bf16"
+
+early_stopping:
+  patience: 28
+  min_delta: 0.0
+  monitor: "val_auc"
+  min_epochs: 25
+  min_lbd_sens: 0.50
+  min_lbd_spec: 0.25
+  gate_blocking: false
+
+thresholding:
+  calib_fraction: 0.4
+  split_seed: 42
+
+augmentation:
+  enable: true
+  flip_p: 0.3
+  noise_std: 0.02
+  gamma_jitter: 0.08
+  cutout_p: 0.08
+  cutout_frac: 0.08
+
+cv:
+  n_splits: 5
+  run_folds: 5
+  shuffle: true
+  stratified: true
+  sample_fraction: 1.0
+
+dataset:
+  num_workers: 8
+  prefetch_factor: 4
+  cache_enabled: true
+  cache_dir: "./cache_112_npy"
+
+device:
+  force: "cuda"
+  cuda_device: 0

@@ -1,0 +1,21 @@
+# 3D DenseNet: Simplified 3D DenseNet with GroupNorm
+experiment:
+  method: "densenet3d"
+
+model:
+  backbone: "densenet3d"
+  variant: "custom"
+  in_channels: 1
+  num_classes: 2
+  init_channels: 32
+  growth_rate: 16
+  block_config: [6, 12, 12, 6]
+  dropout: 0.1
+  compression: 0.5
+  pretrained_path: ""
+
+training:
+  lr: 1.0e-4
+  backbone_lr_ratio: 0.1
+  epochs: 120
+  batch_size: 4

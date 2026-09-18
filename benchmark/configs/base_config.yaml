@@ -1,0 +1,115 @@
+# ===========================================================================
+# AD vs LBD Benchmark — Base Configuration
+# ===========================================================================
+# This file provides sensible defaults for all experiments.
+# Individual method configs in configs/methods/ override these values.
+# CLI arguments (--key=value) provide final overrides.
+
+# === Experiment Identity ===
+experiment:
+  name: "AD_vs_LBD_benchmark"
+  method: "vanilla"
+  seed: 42
+  note: ""
+
+# === Data Paths ===
+# 112^3 preprocessed .npy dataset (converted by scripts/prepare_npy.py from the
+# 128^3 brain-mask Z-scored .npy volumes). On the server, point these at the
+# actual location (e.g. /root/lhy/data/Dataset_112_npy/{AD,LBD}).
+data:
+  label_roots:
+    AD: "./Dataset_112_npy/AD"
+    LBD: "./Dataset_112_npy/LBD"
+  target_shape: [112, 112, 112]
+  folder_file_exts: [".nii", ".nii.gz", ".npy"]
+  normalized: true              # .npy volumes are already brain-mask Z-scored (skip on-load z-score)
+
+# === Dataset ===
+dataset:
+  num_workers: 8
+  prefetch_factor: 4
+  cache_enabled: true
+  cache_dir: "./cache_112_npy"   # fresh cache for the 112^3 .npy pipeline
+
+# === Augmentation ===
+augmentation:
+  enable: true
+  flip_p: 0.3
+  noise_std: 0.02
+  gamma_jitter: 0.08
+  cutout_p: 0.08
+  cutout_frac: 0.08
+
+# === Cross-Validation (split seed controlled by --seed) ===
+cv:
+  n_splits: 5
+  run_folds: 5
+  shuffle: true
+  stratified: true
+  sample_fraction: 1.0
+
+# === Training ===
+training:
+  epochs: 160                # 论文设置
+  batch_size: 4
+  lr: 5.0e-5                 # 骨干学习率
+  weight_decay: 0.05          # 论文值 (AdamW weight_decay=0.05)
+  backbone_lr_ratio: 0.1      # 论文§3.3: 骨干LR = 分类头LR × 0.1
+  warmup_epochs: 10
+  lr_scheduler: "cosine"
+  label_smoothing: 0.05
+  ema_decay: 0.99
+  max_grad_norm: 0.7
+  grad_accum_steps: 1
+  use_amp: true
+  amp_dtype: "bf16"
+
+# === Early Stopping ===
+early_stopping:
+  patience: 28                # 论文§4.2: 连续28轮无AUC提升则早停
+  min_delta: 0.0
+  monitor: "val_auc"          # 论文监控 val_AUC
+  min_epochs: 25              # 至少训练25轮
+  min_lbd_sens: 0.50          # LBD灵敏度最低门限（避免退化为全预测AD）
+  min_lbd_spec: 0.25          # LBD特异度最低门限
+  gate_blocking: false        # true=门限不通过直接早停, false=仅记录警告
+
+# === Threshold Tuning ===
+thresholding:
+  calib_fraction: 0.4
+  split_seed: 42
+
+# === Model Defaults ===
+model:
+  in_channels: 1
+  num_classes: 2
+  pretrained_path: "/root/lhy/code/weights/best_mae_8dir_768dim.pth"
+
+ss3m:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+  branch_types: ["conv", "mamba"]
+  use_checkpoint: true
+  dropout: 0.0
+  use_pos_emb: true
+  merge_type: softmax
+  n_dirs_train: 8
+  use_dual_branch: true
+
+# === Meta-Learning Defaults ===
+meta:
+  n_way: 2
+  k_shot: 4
+  q_query: 4
+  train_episodes: 80
+  val_episodes: 120
+
+# === Output ===
+output:
+  root_dir: "./results"
+
+# === Device ===
+device:
+  force: "cuda"
+  cuda_device: 0

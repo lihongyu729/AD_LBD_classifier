@@ -1,0 +1,23 @@
+# 3D CrossFormer with Dual-Range Attention (LDA/SDA) — proper implementation
+experiment:
+  method: "crossformer3d"
+
+model:
+  backbone: "crossformer3d"
+  variant: "Tiny"              # Tiny|Small|Base|Large
+  in_channels: 1
+  num_classes: 2
+  embed_dim: 64                # 64=Tiny, 96=Small/Base, 128=Large
+  depths: [1, 1, 8, 6]        # Tiny: [1,1,8,6], Small/Base: [2,2,6,2], Large: [2,2,18,2]
+  num_heads: [2, 4, 8, 16]    # Tiny: [2,4,8,16], Small/Base: [3,6,12,24], Large: [4,8,16,32]
+  group_size: [4, 4, 4]        # 3D attention window size
+  interval: [2, 2, 2]          # LDA stride
+  dropout: 0.0
+  drop_path_rate: 0.1
+  pretrained_path: ""
+
+training:
+  lr: 1.0e-4
+  backbone_lr_ratio: 0.1
+  epochs: 150
+  batch_size: 2

@@ -1,0 +1,18 @@
+# 3D CNN Baseline: Adapted from CNN_design_for_AD
+experiment:
+  method: "cnn3d_baseline"
+
+model:
+  backbone: "cnn3d"
+  in_channels: 1
+  num_classes: 2
+  feat_dim: 1024
+  expansion: 4
+  norm_type: "Instance"
+  dropout: 0.3
+  pretrained_path: ""
+
+training:
+  lr: 1.0e-4
+  backbone_lr_ratio: 0.1
+  epochs: 120

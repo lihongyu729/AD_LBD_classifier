@@ -1,0 +1,4949 @@
+{
+  "training": [
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.13156.2015102909345365874.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/2.16.124.113543.6006.99.03437631984197784451.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019042212031291582438573.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019011514251633494007297.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020110410492279320845118.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017051612244999849541586.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.408.5282380.4561270.16391.1515537864.183.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.19356.1349977259.774.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017101913341047583564152.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018080713095892237546533.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.24033.1391698318.786.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018082814375750959035639.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.20470.1401366752.943.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018082913305727487820143.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019022213485575287581268.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.26195.1315764223.120.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.27655.1298494764.128.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.25235.1423586522.230.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018041214535972779878982.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.1256.2017041313065067055.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019111212483295993482556.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019051012122874521467937.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201907050815444525028480.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019030515110697509681028.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019011114393230148578558.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.21283.1342287761.458.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.25633.1498068610.33.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.202010091015015623527071.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.30000019101018113015200000712.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201710111546454248572900.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.212.6945.2378838.32439.1268344871.751.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2008022115503419179834682.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.24773.1492194368.537.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018060713061750729482559.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018113013143829379244416.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019061313450946676172668.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2008022115144617898506526.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019053014131635965239580.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019013014453842198695574.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.25034.1301666998.861.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2016112812414016321924160.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019120613560318691365907.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.20180202143425708503582.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017101214440850987416095.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.24182.1312239898.34.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.25.4.2428978.1316637938.875.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.5928.2017030209423618187.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020071608444449465334635.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.25251.1312823825.38.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019030713590462430308091.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019100209050995476428480.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2010081916205413270406011.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019121613112928077657711.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.19344.1450218729.961.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017120115551811114302813.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018083115361555536012481.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019021308212342489038408.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019071014040946755787378.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019040513572258311488589.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019010314541847784985854.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019011614500891798466022.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.24614.1502203145.615.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.19974.1398867996.219.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.6316.2016041914491676794.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.26847.1318539814.410.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201812131228349958667772.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018051813572357996635254.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.25884.1493916012.875.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.24773.1492194368.637.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.8680.2015072311154300570.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201902281321534371248947.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018082712534550774972427.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018032215183930956472063.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019013113154024372156500.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.9036.2017022209590865781.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.260.6945.2378838.4380.1287451336.649.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019081613480830588534096.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018022313384393685366616.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017031016133843625949937.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.21635.1330039945.725.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201912191132159840271576.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.260.6945.2378838.3922.1285360149.741.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018080214163256766100277.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.20180622130616484105210.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.19359.1394125545.898.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020011612580055374482391.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018101915185697254068932.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017121516101168108272539.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.260.6945.2378838.32264.1280247029.292.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019071809095822324452229.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017022011422272403441963.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.20710.1341844074.263.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017050916590150291190161.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201901151325214675202279.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.20191029141509803082924.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020011613563930695651044.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2011042012010943795358249.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.24032.1427817437.784.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019020814523694122311081.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019030414452677829888826.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.7396.2016101214260593598.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.22994.1322625595.622.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715134266831817136.0.0.0_e3.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2011042012064533427259022.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018112713162367875814263.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.2807.4236122.15489.1430148434.888.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.8988.2015121413221031031.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020100110114781966070644.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018103112213463351460610.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.2636.2017022310570654031.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017033109461969247338933.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.26847.1318539814.411.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019062413193969591981073.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.8968.2015081314063175336.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.20181029150018255912475.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.25201.1328743550.350.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018052213481379008999607.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.8260.2016070512474648636.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2010081916304931946107145.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017071111574029562275732.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.25251.1312823825.33.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017072708462688380232195.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020020310474689360723960.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.22190.1453302466.58.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.201009021349179134630481.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019061913561011642635602.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018062012533380787584407.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017030912421627595160380.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017092113493732658847905.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.19588.1297203176.366.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020100611362956894861075.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2010090214231268915238962.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019120512145381986057809.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.26666.1435079789.975.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/2.16.124.113543.6006.99.692408546491371282.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.260.6945.2378838.1331.1278514545.188.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018101609091571660612481.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019030113194571167454421.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.8637.1391032380.1.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019111913404641701505106.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.24061.5.0.7120.2013041916350496762.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018082210082580306014476.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.27655.1298494764.135.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019040313252534233344996.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019021113234913099785815.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019091113412148746579810.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019012414491986907956865.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.25.4.2428978.1331826381.37.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018102514201746599932835.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019052012482260217759462.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2008021114050132913306909.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.26666.1435079789.978.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2009043014543577288650224.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018060513494852479038843.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.23044.1327000803.647.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.26542.1433859175.933.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.19588.1297203176.359.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020030213474154214955175.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018020815190872408363666.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715003053845612546.0.0.0_e3.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019090613504660829816980.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.1056.2016060214052190167.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201911071350194879579387.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018091214210673993434685.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.5332.2016022510441215925.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2021010809574176698540127.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017051615511829006901356.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018012513435090811298284.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019101807170981847939580.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.8260.2016070511073106707.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019052013595719770806073.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017053008440916107232195.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017083011375641388116979.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020112410153043859145249.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017121812375399518432430.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.25296.1303310069.882.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019061012181367067045684.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017092913461014650749084.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017031014264174399289848.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.24773.1492194368.943.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2008022115090026672905753.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715134266831817136.0.0.0_e4.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020100112004452612675662.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.25.4.2428978.1305034913.436.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.336.6945.2378838.15939.1385495162.972.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.24082.1338731502.875.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020022012072677583740350.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2016102412594387431330308.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019071112180912338421915.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201808141103229687542905.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019050313185975517914239.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020101910382856624246374.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.22230.1401453925.55.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/2.16.124.113543.6006.99.04206239576919600557.nii",
+      "label": 0,
+      "spacing": [
+        1.2001953125,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2021020408343254401356022.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019030613544524684073853.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.26195.1315764223.121.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019011815264370369052008.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019042413574528911173522.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.8988.2015121510255814155.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201808241429135444776210.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018111314221915828328087.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715003053845612546.0.0.0_e4.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.336.6945.2378838.25393.1380654775.63.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.7176.2015083111220539718.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018111214330310512406527.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.336.6945.2378838.19038.1388674124.913.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.23390.1373383426.18.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.24540.1496171880.621.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020012213502150122218742.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.21869.1355329380.435.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019071913443696523739054.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019122011124162249354335.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018101815045538082501751.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2010102115520421844046918.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.22459.1326207646.685.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201805181456399944941108.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.19676.1347022427.147.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019111912185953673658492.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019031114291992492006629.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.20444.1403010495.850.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018032315431050732560093.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019091713333734305572010.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017020114104421470403643.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.21483.1323447628.318.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.26847.1318539814.36.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.25884.1493916012.877.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715134267457817141.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.20884.1349332808.526.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019101112463334639883490.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.336.6945.2378838.19038.1388674124.903.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019080212220433362102605.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017071415351994910491823.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715003054546412551.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017100314034117208080402.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017101715094039516628629.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2009043015360010308088240.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019011013031683016276159.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.7.20403.30000008121614462206200018169.nii",
+      "label": 0,
+      "spacing": [
+        0.8203125,
+        0.8203125,
+        0.8199999928474426
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.336.6945.2378838.25393.1380654775.61.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017092911435632917940463.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020010913451974512442343.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018103113222382027365628.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2021012109062818398312475.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019072312173068538297976.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019080113463650934626907.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020091113142116189354634.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017092613421120962284978.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018120615073175913365460.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020082011065927137163804.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017110214571424626915552.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.25.4.2428978.1264780076.949.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020110209413441807959776.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019021512070037865153744.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2010090213545041753631254.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018061412385915757577123.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.20710.1341844074.284.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.19563.1349147367.483.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.25201.1328743550.349.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019103011023330065029979.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.4436.2017052310442235856.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.260.6945.2378838.1484.1286200592.840.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.21603.1329679257.555.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020011012205532408543984.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.20362.1444151503.324.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018031515453522403723169.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019092613412033675216328.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018103014080166007205248.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017113015310172958656389.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017031514490347702846562.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.374.6574342.5279736.24454.1505840215.571.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018090413513839937617377.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018062112491522763843959.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019050613411622828912089.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018102414214262348789067.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019121313452844578254595.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020030911461681155929885.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.212.6945.2378838.28612.1259007358.567_c8HRBRAIN.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020012914263341719937563.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/2.16.124.113543.6006.99.8030567970643736921.nii",
+      "label": 0,
+      "spacing": [
+        1.0156199932098389,
+        1.0156199932098389,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.21724.1374755366.294.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/2.16.124.113543.6006.99.04157944796111974067.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.201801121314544399469872.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019020813502453283306063.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019021414195113150765166.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019101013444556388566116.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.336.6945.2378838.17650.1377005888.367.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.25.4.2428978.1313615791.661.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.19359.1394125545.901.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017050910370634584534332.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018120613590339058860442.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017050815561452929208208.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020091111390531450449616.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017051914453028034395729.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.21998.1332349649.57.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.260.6945.2378838.30283.1276530895.862.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.201104201239331218884731.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019111812145728687900353.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2008021114575856173659496.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.26139.1313619057.41.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018121408130554892339580.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017041010440857725835121.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018071313052944369841040.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019062812183256870218127.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.25251.1312823825.34.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019010713201079224404728.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.30705.1304039131.904.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018102513110044132927817.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020020512091065021667427.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019020413130458819740398.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2017022115202266825057219.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020062908503255328943080.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.3146400.25038.1425911898.734.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.336.6945.2378838.21536.1381259751.17.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019112710240814942388663.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.353.6945.2378838.19974.1398867996.218.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.20710.1341844074.283.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019120612214560657665935.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.46.670589.11.5730.5.0.7176.2015083113143885966.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.32.35006.2010102115462538979046144.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019062012193317377346924.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018111913024196620627900.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.260.6945.2378838.4080.1286405957.212.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/t1_orig.nii",
+      "label": 0,
+      "spacing": [
+        0.9375072121620178,
+        0.9375,
+        5.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/2.16.124.113543.6006.99.05587052912155288539.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018121814000965516504486.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.23726.1331774480.874.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2020062910221029252948098.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018080814562154729201853.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.2.840.113619.2.283.6945.2378838.23390.1373383426.20.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/t1_n4_1mm_mask.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2019011714283892799284354.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/t1_n4_1mm_norm.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/AD/1.3.12.2.1107.5.2.19.45255.2018060813275438175551010.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.2008092913104816077501823.0.0.0.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115112764480555492.0.0.0_e2.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.374.6574342.5279736.26337.1482286992.561.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.260.6945.2378838.30278.1289083081.707.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.283.6945.2378838.8171.1321671970.935.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115112764480555492.0.0.0_e3.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115181921122459378.0.0.0_e1.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.260.6945.2378838.30278.1289083081.700.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.283.6945.2378838.26140.1333508986.509.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.283.6945.2378838.26140.1333508986.510.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115181921122459378.0.0.0_e2.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115112764480555492.0.0.0_e1.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115181921122459378.0.0.0_e3.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.260.6945.2378838.31633.1274797217.630.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.283.6945.2378838.26140.1333508986.645.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.19.45255.2020102310392240701248715.0.0.0.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/t1_n4_1mm_norm.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.260.6945.2378838.4380.1287451336.634.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115112765074155497.0.0.0.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/t1_n4_1mm_mask.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/1.2.840.113619.2.260.6945.2378838.4401.1271019391.431.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/LBD/t1_orig.nii",
+      "label": 1,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.976561427116394
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2019021815024512782102787.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.201908271350403844148997.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2017030613445210133748739.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2021012811292397157057894.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.201812141320096645324772.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2018112113115582106993271.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.201705221301466065877838.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2017090714544219558738637.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2020011710270817306824797.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2018061514084169866114152.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2019022214492084148086286.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2020030612162220389862479.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2018111208215645639173980.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2019040614042450586755046.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2019120311184567514161889.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2020011013443159141749773.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/1.3.12.2.1107.5.2.19.45255.2019080810202184680777744.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/t1_n4_1mm_norm.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/t1_orig.nii",
+      "label": 2,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.9765568375587463
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/train/MCI/t1_n4_1mm_mask.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019081612173544158550675.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019030814520351808686570.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.46.670589.11.24061.5.0.7120.2013041916444290763.nii",
+      "label": 0,
+      "spacing": [
+        1.0546875,
+        1.0546875,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.201905060825333801688370.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2018081313551772686844673.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.260.6945.2378838.32264.1280247028.994.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2017051715543785844316618.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2020011409045885927639580.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019111512130161321823001.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.353.6945.2378838.25752.1425399048.398.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2020012714133845500160317.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.46.670589.11.24061.5.0.7548.2012070512285537696.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2018071614125116818008732.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.374.6574342.5279736.24835.1497016668.629.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.212.6945.2378838.31906.1264514873.669.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019111410481663938570697.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.25.4.2428978.1305034905.674.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2017022013552412267955016.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019103111194180766381158.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.32.35006.2008021114103637027607682.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019031510353364872321669.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.19676.1347022427.298.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019052214193140626606578.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715134266831817136.0.0.0_e2.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.46.670589.11.5730.5.0.7976.2016110810522454794.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.23485.1335467910.748.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.23100.1369850949.737.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019083012295442584146250.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.21099.1325613287.501.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019050913160184174841447.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.30705.1304039131.912.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.22121.1362056851.977.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.202012140935373703439580.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2017051015011284170751558.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.7.20403.30000008012815580687500040430.nii",
+      "label": 0,
+      "spacing": [
+        0.8984375,
+        0.8984375,
+        0.8199999928474426
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715134266831817136.0.0.0_e1.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.46.670589.11.24061.5.0.3784.2012042015570031634.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2017060210074175740419684.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.260.6945.2378838.30283.1276530895.793.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2017051613385087500761556.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.22121.1362056851.975.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.46.670589.11.5730.5.0.3688.2017100411135182092.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019011713194847630579336.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.46.670589.11.5730.5.0.4492.2015071012151609031.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/2.16.124.113543.6006.99.1786355198763853426.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019042307412998256239580.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.46.670589.11.5730.5.0.3940.2018021209391326540.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019030714565699756413109.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2020092212421580304336953.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019071213463646555791739.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.201902191459031826716394.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.20190605134639922048276.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2018090513011828209804743.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019022814571660824878406.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019022614492171203454331.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715003053845612546.0.0.0_e1.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2018012614484852323992556.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2017022010423433494235642.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019110812154681915109405.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.353.6945.2378838.518.1423007295.793.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019050213403530191726293.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2018111313222413575923069.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2017120813534098247947804.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.21943.1338519127.38.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.32.35006.2010081916483765483609544.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.20028.1360202487.376.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/t1_n4_1mm_mask.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/2.16.124.113543.6006.99.5963729520107402770.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.20650.1346199364.937.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.23044.1327000803.855.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.32.35006.3.2007051715003053845612546.0.0.0_e2.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.283.6945.2378838.20981.1351367977.102.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/t1_orig.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.9765578508377075
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.2019041013414289508585838.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/t1_n4_1mm_norm.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.3.12.2.1107.5.2.19.45255.30000020111212363329100001098.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/AD/1.2.840.113619.2.336.6945.2378838.17650.1377005888.369.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115181921122459378.0.0.0_e4.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/LBD/1.2.840.113619.2.283.6945.2378838.26140.1333508986.646.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/LBD/1.3.46.670589.11.5730.5.0.2480.2016010811155087651.nii",
+      "label": 1,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/LBD/t1_orig.nii",
+      "label": 1,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.9765719175338745
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/LBD/t1_n4_1mm_mask.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/LBD/1.3.12.2.1107.5.2.32.35006.2008092913162482392702596.0.0.0.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/LBD/t1_n4_1mm_norm.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.2020090310361610384335363.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.2019091213455793236224497.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.202010051237015048170644.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.2018121214061081232671631.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.2019111510421231559539580.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.2019110112390799861002058.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.2018060112175790732789849.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/t1_n4_1mm_norm.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.2020091509140469513944598.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/t1_orig.nii",
+      "label": 2,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.9765708446502686
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/1.3.12.2.1107.5.2.19.45255.30000019090514462153900001097.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/val/MCI/t1_n4_1mm_mask.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "test": [
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.202001311216168907944799.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2020031213182941564805942.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019103014205190566706856.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.353.6945.3146400.25038.1425911898.728.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.260.6945.2378838.31345.1282067676.647.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019041613102412778509466.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.283.6945.2378838.20650.1346199364.938.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2017020810442563158441231.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018020215334493739710246.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019100314334677564408219.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.32.35006.2008020713162112358756804.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018070608383653229905190.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.212.6945.2378838.28612.1259007358.772.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2020071709201652647749299.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.374.6574342.5279736.24589.1501538789.979.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.212.6945.2378838.32326.1264797289.487.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019030614485823191078871.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019121112173029351038185.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2020071710412235091254317.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2016112212142985622332873.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.201811291258151146254148.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019080714274065301224369.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.46.670589.11.5730.5.0.3612.2018022810513287968.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.283.6945.2378838.21635.1330039945.726.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2017030315522166926715918.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.46.670589.11.24061.5.0.3784.2012042016064120635.nii",
+      "label": 0,
+      "spacing": [
+        1.0546875,
+        1.0546875,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019100710482325307740128.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.283.6945.2378838.21449.1350934877.44.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2020082809071231330328480.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.283.6945.2378838.21869.1355329380.432.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.374.6574342.5279736.17215.1470538901.798.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019022114461158490355017.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.201912111355343650843203.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.46.670589.11.5730.5.0.6624.2016052711055146834.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019090913573381374214372.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2016090216112841783862047.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018081412362164187747929.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.32.35006.2009043015001218541650997.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019082213250521218014220.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.283.6945.2378838.25034.1301666998.871.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019101112463334639883490.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.260.6945.2378838.1484.1286200593.96.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019043013483350801311018.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018060613050415657935001.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019040212562035381183330.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019111410481663938570697.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018061113533176973404821.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2019053112174572078343277.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018091714115954961515027.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/2.16.124.113543.6006.99.03515436311601067631.nii",
+      "label": 0,
+      "spacing": [
+        1.2000000476837158,
+        1.0156199932098389,
+        1.0156199932098389
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2017031608142166007619686.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.46.670589.11.5730.5.0.6704.2015060513211575667.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2017101812091369871760351.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.46.670589.11.5730.5.0.8276.2017051513162304244.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.374.6574342.5279736.25633.1498068609.662.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.46.670589.11.5730.5.0.6148.2015052709115100035.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        0.9765625,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.283.6945.2378838.21283.1342287761.459.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.2000000476837158
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018110114135779332082616.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.32.35006.2008020713215711128857577.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.2.840.113619.2.374.6574342.5279736.16236.1510113439.700.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2017072612271588683855090.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2017042008403195366532195.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2018012910420426780543879.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/t1_n4_1mm_norm.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/t1_n4_1mm_mask.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/t1_orig.nii",
+      "label": 0,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.976573646068573
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/AD/1.3.12.2.1107.5.2.19.45255.2020013113173257956949817.0.0.0.nii",
+      "label": 0,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/LBD/1.3.12.2.1107.5.2.32.35006.3.2007062115112764480555492.0.0.0_e4.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/LBD/t1_n4_1mm_mask.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/LBD/t1_n4_1mm_norm.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/LBD/1.3.12.2.1107.5.2.19.45255.2019090412140160841461266.0.0.0.nii",
+      "label": 1,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/LBD/1.3.12.2.1107.5.2.32.35006.2008092913451657447418054.0.0.0.nii",
+      "label": 1,
+      "spacing": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/LBD/t1_orig.nii",
+      "label": 1,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.9765716195106506
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/MCI/t1_n4_1mm_mask.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/MCI/1.3.12.2.1107.5.2.19.45255.2017112910205323267040441.0.0.0.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/MCI/t1_n4_1mm_norm.nii",
+      "label": 2,
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "/webdav/MyData/MRI/data/classifier_splits/test/MCI/t1_orig.nii",
+      "label": 2,
+      "spacing": [
+        0.9765625,
+        1.5,
+        0.976564884185791
+      ]
+    }
+  ]
+}

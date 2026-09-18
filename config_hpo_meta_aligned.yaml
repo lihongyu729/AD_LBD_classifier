@@ -1,0 +1,96 @@
+input:
+  shape_dhw: [112, 112, 112]
+  spacing: [1.0, 1.0, 1.0]
+
+model:
+  patch_size: [16, 16, 16]
+  embed_dim: 768
+  depth: 6
+
+dataset:
+  folder_label_map:
+    AD: 0
+    LBD: 1
+  allowed_labels: ["AD", "LBD"]
+  folder_file_exts: [".nii", ".nii.gz"]
+  use_weighted_sampler: false
+  auto_num_workers: false
+  num_workers: 12
+  reserve_cores: 2
+
+paths:
+  out_dir: ~/MRI/classifer/out
+  label_roots:
+    AD: ~/split_1mm_112/AD
+    LBD: ~/split_1mm_112/LBD
+
+classifier:
+  backbone: medmamba_ss3m
+  batch_size: 4
+  lr: 5.0e-5
+  weight_decay: 0.008
+  epochs: 160
+  grad_accum_steps: 1
+  print_every: 100
+  num_classes: 2
+  pretrained_path: ~/MRI/classifer/out/best_mae_8dir_768dim.pth
+  use_class_weights: true
+  loss: focal
+  focal_gamma: 1.0
+  label_smoothing: 0.05
+  scheduler: cosine
+  warmup_epochs: 12
+  sampler: none
+  imbalance_mode: class_weight
+  eval_threshold: null
+
+ss3m:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+  branch_types: ["conv", "mamba"]
+  use_checkpoint: true
+  dropout: 0.0
+  use_pos_emb: true
+  merge_type: softmax
+
+augment:
+  enable: true
+  flip_p: 0.3
+  noise_std: 0.02
+  gamma_jitter: 0.08
+  cutout_p: 0.08
+  cutout_frac: 0.08
+
+hpo:
+  enabled: true
+  algorithm: three_stage
+  max_epochs: 160
+  baseline_epochs: 10
+  eta: 3
+  trials: 20
+  bayes_trials: 6
+  ga_trials: 6
+  ga_mutate_prob: 0.2
+  folds: 5
+  final_folds: 5
+  final_epochs: 160
+  save_best_weights: true
+  runs_dir: runs
+  use_tensorboard: true
+  export_pdf: true
+  optim_target: auc
+  early_stop_patience: 28
+  early_stop_min_epochs: 10
+  early_stop_min_delta: 0.0
+  seed: 42
+  target_improve: 0.15
+  search_space:
+    lr: [3.0e-5, 1.0e-4]
+    weight_decay: [4.0e-3, 1.2e-2]
+    batch_size: [4]
+    loss: ["focal"]
+    focal_gamma: [1.0]
+    use_class_weights: [true]
+    sampler: ["none"]
+    dropout: [0.0]

@@ -1,0 +1,14 @@
+# Vanilla: Standard supervised training with MedMambaSS3M
+experiment:
+  method: "vanilla"
+
+model:
+  backbone: "medmamba_ss3m"
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+
+training:
+  lr: 5.0e-5
+  backbone_lr_ratio: 0.05
+  epochs: 150

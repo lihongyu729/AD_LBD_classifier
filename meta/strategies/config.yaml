@@ -1,0 +1,139 @@
+# 运行策略：maml | fine_tuning | proto
+meta_learning:
+  three_loyal_strategies:
+    optimizer_strategy:
+      name: "anil"
+      enable: true
+      params:
+        inner_lr: 0.05
+        inner_steps: 5
+        first_order: false 
+        dropout: 0.0
+        label_smoothing: 0.05 
+    
+    metric_strategy:
+      name: "protonet"
+      enable: false
+      params:
+        metric: "cosine" # 【关键】必须使用 cosine，抛弃 euclidean
+        proj_dim: 128
+        gamma: 0.0       # 保留之前的 Focal Loss 压制机制
+        temperature: 2.0 
+        label_smoothing: 0.05
+        
+    hybrid_strategy:
+      name: "hybrid"
+      enable: false
+      params:
+        opt_weight: 0.5
+        metric_weight: 0.5
+        scheduler: "linear" # linear, constant, adaptive
+
+task:
+  n_way: 2
+  k_shot: 4
+  q_query: 4
+
+input:
+  shape_dhw: [112, 112, 112]
+
+model:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+
+classifier:
+  strategy: meta
+  use_amp: true
+  amp_dtype: bf16
+  use_compile: false
+  epochs: 100
+  batch_size: 4
+  lr: 1.0e-3
+  backbone_lr_ratio: 0.1
+  weight_decay: 0.05
+  freeze_backbone: false
+  warmup_epochs: 0
+  lr_scheduler: cosine
+  lr_factor: 0.5
+  lr_patience: 10
+  label_smoothing: 0.05
+  ema_decay: 0.999
+  max_grad_norm: 1.0
+  grad_accum_steps: 8
+  pretrained_path: /data/home/scv8970/MRI/code/weights/best_mae.pth
+  use_class_weights: true
+  freeze_bn: false
+
+metrics:
+  - acc
+  - auc
+  - f1_macro
+  - f1_weighted
+  - precision_macro
+  - recall_macro
+  - confusion_matrix
+
+early_stopping:
+  patience: 45
+  min_delta: 0.0
+  monitor: val_auc
+
+logging:
+  tensorboard: false
+
+debug:
+  enabled: false
+  epochs: 1
+  folds: 1
+
+stability:
+  safe_mode: false
+  cudnn_benchmark: false
+  cudnn_deterministic: true
+
+dataset:
+  # 文件夹标签模式：仅采样 AD/LBD 二类（建议与 folder_label_map 类名一致）
+  folder_label_map:
+    AD: 0
+    LBD: 1
+  allowed_labels: ['AD', 'LBD']
+  num_workers: 12
+  prefetch_factor: 4
+  use_weighted_sampler: true
+  # CSV 标签模式（如使用清单）
+  label_map:
+    AD: 0
+    LBD: 1
+  label_column_path: path
+  label_column_class: label
+  folder_file_exts: [".nii", ".nii.gz"]
+  folder_require_substring: null
+
+augment:
+  enable: true
+  flip_p: 0.3
+  noise_std: 0.01
+  gamma_jitter: 0.05
+  cutout_p: 0.0
+  cutout_frac: 0.1
+
+paths:
+  out_dir: /data/home/scv8970/run/MRI/code/meta/out/out
+  
+  label_roots:
+    AD: /data/home/scv8970/archive/split_1mm_112/data/AD
+    LBD: /data/home/scv8970/archive/split_1mm_112/data/LBD
+    MCI: /data/home/scv8970/archive/split_1mm_112/data/MCI
+      
+cv:
+  cv_n_splits: 10
+  cv_shuffle: true
+  cv_random_state: 42
+  stratified: true
+  sample_fraction: 1.0
+  quick_folds: 3
+
+cv:
+  folds: 10
+  seed: 42

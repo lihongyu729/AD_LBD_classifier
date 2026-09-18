@@ -1,0 +1,15 @@
+# MedMamba3D: Simpler single-branch Mamba variant
+experiment:
+  method: "medmamba3d"
+
+model:
+  backbone: "medmamba3d"
+  embed_dim: 384
+  depth: 6
+  patch_size: [16, 16, 16]
+  pretrained_path: ""
+
+training:
+  lr: 5.0e-5
+  backbone_lr_ratio: 0.05
+  epochs: 150

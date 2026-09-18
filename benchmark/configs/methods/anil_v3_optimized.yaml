@@ -1,0 +1,106 @@
+# ===========================================================================
+# ANIL v3 Optimized — 基于v2_balanced + 训练过程分析进一步优化
+# 目标: val AUC≥0.9, BAC≥0.9
+#
+# v2问题: class_weights=[1.0,8.0]过于激进导致Spec下降
+# v3策略: 适度加权 + 更多正则 + 更长训练 + SupCon辅助
+# ===========================================================================
+experiment:
+  name: "AD_vs_LBD_benchmark"
+  method: "anil"
+  seed: 42
+  note: "v3_optimized"
+
+data:
+  label_roots:
+    AD: "/root/lhy/data/AD"
+    LBD: "/root/lhy/data/LBD"
+  target_shape: [112, 112, 112]
+  folder_file_exts: [".nii", ".nii.gz"]
+
+cv:
+  n_splits: 5
+  run_folds: 5
+  shuffle: true
+  stratified: true
+  sample_fraction: 1.0
+
+training:
+  epochs: 220                      # 200→220: 给更多收敛空间
+  batch_size: 4
+  lr: 4.0e-05                      # 3e-5→4e-5: 略增, 加速收敛
+  weight_decay: 0.03               # 0.05→0.03: 适度正则(0.05太强)
+  backbone_lr_ratio: 0.08          # 0.05→0.08: backbone学更多
+  warmup_epochs: 12                # 15→12: 缩短warmup
+  lr_scheduler: "cosine"
+  label_smoothing: 0.03            # 保持
+  ema_decay: 0.99                  # 保持
+  max_grad_norm: 1.0
+  grad_accum_steps: 1
+  use_amp: true
+  amp_dtype: "bf16"
+
+early_stopping:
+  patience: 40                      # 35→40: 更耐心, 避免早停欠拟合
+  min_delta: 0.001
+  monitor: "val_auc"
+  min_epochs: 35                    # 40→35: 适当放宽
+  min_lbd_sens: 0.45                # 0.5→0.45: 放宽一点, 避免门限阻止
+  min_lbd_spec: 0.25
+  gate_blocking: false
+
+thresholding:
+  calib_fraction: 0.4
+  split_seed: 42
+
+model:
+  in_channels: 1
+  num_classes: 2
+  pretrained_path: "/root/lhy/code/weights/best_mae_8dir_768dim.pth"
+  backbone: "medmamba_ss3m"
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+
+ss3m:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+  branch_types: ["conv", "mamba"]   # 双分支
+  use_checkpoint: true
+  dropout: 0.08                    # 0.1→0.08: 略降dropout
+  use_pos_emb: true
+  merge_type: "softmax"            # softmax(实验证明优于avg)
+  n_dirs_train: 8
+  use_dual_branch: true
+
+meta:
+  n_way: 2
+  k_shot: 5                        # 6→5: 略降, 平衡LBD样本使用
+  q_query: 4
+  train_episodes: 50               # 40→50: 适度增加, 每折LBD约18个, 50episodes×5shot=250, 重复约14x
+  val_episodes: 80
+
+  strategy:
+    name: "anil"
+    inner_lr: 0.012                # 0.015→0.012: 略降, 更稳定
+    inner_steps: 4                 # 5→4: 略减, 防内循环过拟合
+    first_order: true
+    dropout: 0.12                  # 0.1→0.12: 略增正则
+    label_smoothing: 0.025         # 0.02→0.025: 略增
+    inner_label_smoothing: 0.015   # 0.02→0.015: 内循环略降
+    focal_weight: 0.35             # 0.5→0.35: 降低focal占比(0.5太激进)
+    focal_gamma: 2.0               # 2.5→2.0: 略降gamma
+    use_class_weights: true        # 保持
+    inner_use_class_weights: true
+    max_inner_lr: 0.08             # 0.1→0.08: 限制内循环最大LR
+    class_weights: [1.0, 5.0]      # [1.0,8.0]→[1.0,5.0]: 降低权重(8倍太激进导致Spec下降)
+    supcon_weight: 0.12            # 0.15→0.12: 略降
+    supcon_temperature: 0.07
+
+output:
+  root_dir: "./results"
+
+device:
+  force: "cuda"
+  cuda_device: 0

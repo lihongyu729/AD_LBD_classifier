@@ -1,0 +1,24 @@
+# MedMambaSS3M reference baseline (standard training, no meta-learning)
+experiment:
+  method: "medmamba_ss3m"
+
+model:
+  backbone: "medmamba_ss3m"
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+  head_type: "linear"
+  head_hidden_dim: 256
+  head_dropout: 0.10
+  head_activation: "silu"
+
+training:
+  lr: 5.0e-5
+  backbone_lr_ratio: 0.05
+  epochs: 150
+
+ss3m:
+  use_checkpoint: true
+  use_dual_branch: true
+  merge_type: softmax
+  n_dirs_train: 8

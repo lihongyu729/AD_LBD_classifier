@@ -1,0 +1,22 @@
+# 3D Swin Transformer — Window-based shifted-window attention for 3D
+experiment:
+  method: "swin3d"
+
+model:
+  backbone: "swin3d"
+  variant: "Tiny"
+  in_channels: 1
+  num_classes: 2
+  embed_dim: 96
+  depths: [2, 2, 6, 2]
+  num_heads: [3, 6, 12, 24]
+  window_size: [7, 7, 7]
+  dropout: 0.0
+  drop_path_rate: 0.1
+  pretrained_path: ""
+
+training:
+  lr: 1.0e-4
+  backbone_lr_ratio: 0.1
+  epochs: 150
+  batch_size: 2

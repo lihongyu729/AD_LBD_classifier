@@ -1,0 +1,201 @@
+# 消融实验 — Mamba-only 分支，优化目标：提升 AUC（当前 0.764 → 目标 0.80+）
+# 问题：mamba 的 bac 相对稳定（4/5 fold 无崩塌）但 AUC 天花板低
+# 根因：Mamba 擅长序列建模但需要更多训练步数才能学到好的特征表示
+# 修复：更高 LR + 更多 inner_steps，给 mamba 更多适应空间
+
+meta_learning:
+  three_loyal_strategies:
+    optimizer_strategy:
+      name: "anil"
+      enable: true
+      params:
+        inner_lr: 0.008             # 0.005→0.008：mamba 需要更强的内循环适应
+        inner_steps: 5              # 3→5：给 mamba 更多步数（序列建模需要更多迭代）
+        first_order: true
+        dropout: 0.15
+        label_smoothing: 0.02
+        inner_label_smoothing: 0.0
+        focal_weight: 0.0
+        focal_gamma: 1.0
+        use_class_weights: false
+        inner_use_class_weights: false
+        max_inner_lr: 0.05
+        supcon_weight: 0.0
+        supcon_temperature: 0.06
+
+    metric_strategy:
+      name: "protonet"
+      enable: false
+      params:
+        metric: "cosine"
+        proj_dim: 32
+        gamma: 0.1
+        temperature: 12.0
+        label_smoothing: 0.04
+
+    hybrid_strategy:
+      name: "hybrid"
+      enable: false
+      params:
+        opt_weight: 0.5
+        metric_weight: 0.5
+        scheduler: "adaptive"
+
+task:
+  n_way: 2
+  k_shot: 4
+  q_query: 4
+  train_episodes_override: 0
+  min_train_episodes: 40
+  max_train_episodes: 96
+  max_minority_reuse_per_epoch: 4.2
+  min_epoch_coverage_ratio: 0.85
+  val_episodes_meta: 80
+  allow_unsafe_episode_override: false
+
+ss3m:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+  branch_types: ["mamba", "mamba"]
+  use_checkpoint: true
+  dropout: 0.0
+  use_pos_emb: true
+  merge_type: softmax
+
+input:
+  shape_dhw: [112, 112, 112]
+
+model:
+  embed_dim: 768
+  depth: 6
+  patch_size: [16, 16, 16]
+
+classifier:
+  backbone: medmamba_ss3m
+  strategy: meta
+  use_amp: true
+  amp_dtype: bf16
+  use_compile: false
+  epochs: 200                       # 160→200：mamba 收敛更慢，需要更多 epoch
+  batch_size: 4
+  lr: 8.0e-5                        # 5e-5→8e-5：更高 LR 推动 mamba 学习
+  weight_decay: 0.008
+  freeze_backbone: false
+  warmup_epochs: 10                 # 更长的预热
+  lr_scheduler: cosine
+  lr_factor: 0.5
+  lr_patience: 8
+  label_smoothing: 0.03
+  ema_decay: 0.99
+  max_grad_norm: 1.0
+  grad_accum_steps: 1
+  pretrained_path: ~/MRI/classifer/out/best_mae_8dir_768dim.pth
+  use_class_weights: true
+  freeze_bn: false
+  backbone_norm: batchnorm
+  backbone_norm_groups: 8
+  head_type: linear
+  head_temperature: 1.0
+  head_hidden_dim: 256
+  head_dropout: 0.10
+  head_activation: silu
+  backbone_n_dirs_train: 8
+  backbone_use_dual_branch: false
+  backbone_lr_ratio: 0.10           # 0.05→0.10：让 mamba backbone 也学到判别特征
+  pretrained_failfast_min_ratio: 0.10
+  pretrained_warn_ratio: 0.30
+  pretrained_auto_scan_siblings: true
+  pretrained_auto_scan_max_files: 12
+  pretrained_prefer_mae_names: true
+
+metrics:
+  - acc
+  - auc
+  - f1_macro
+  - f1_weighted
+  - precision_macro
+  - recall_macro
+  - confusion_matrix
+
+early_stopping:
+  patience: 35                      # 更多 patience：mamba 收敛慢
+  min_delta: 0.0
+  monitor: val_raw_auc
+  min_lbd_sens: 0.35
+  min_lbd_spec: 0.15
+  gate_blocking: false
+
+imbalance:
+  mode: auto
+  class_weight_mode: effective_num
+  class_weight_beta: 0.995
+  respect_episode_balance: true
+  balanced_episode_focal_weight: 0.10
+
+thresholding:
+  allow_tuned_early_stop: false
+  calib_fraction: 0.4
+  split_seed: 42
+
+logging:
+  tensorboard: false
+
+debug:
+  enabled: false
+  epochs: 1
+  folds: 1
+
+stability:
+  safe_mode: false
+  cudnn_benchmark: true
+  cudnn_deterministic: false
+
+dataset:
+  folder_label_map:
+    AD: 0
+    LBD: 1
+  allowed_labels: ['AD', 'LBD']
+  num_workers: 8
+  prefetch_factor: 4
+  use_weighted_sampler: false
+  label_map:
+    AD: 0
+    LBD: 1
+  label_column_path: path
+  label_column_class: label
+  folder_file_exts: [".nii", ".nii.gz"]
+  folder_require_substring: null
+
+preprocess_cache:
+  enabled: true
+  cache_dir: ~/MRI/pretrain/code/meta/cache
+
+augment:
+  enable: true
+  flip_p: 0.3
+  noise_std: 0.02
+  gamma_jitter: 0.08
+  cutout_p: 0.08
+  cutout_frac: 0.08
+
+paths:
+  out_dir: ~/MRI/pretrain/code/meta/out/ablation
+
+  label_roots:
+    AD: ~/split_1mm_112/AD
+    LBD: ~/split_1mm_112/LBD
+    MCI: ~/split_1mm_112/MCI
+
+cv:
+  cv_n_splits: 5
+  run_folds: 5
+  cv_shuffle: true
+  cv_random_state: 42
+  stratified: true
+  sample_fraction: 1.0
+  quick_folds: 2
+
+device:
+  force: "cuda"
+  cuda_device: 0
