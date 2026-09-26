@@ -74,11 +74,13 @@ meta/config_*.yaml
 !meta/config_ablation_dual.yaml
 !meta/config_ablation_no_pretrain.yaml
 
-# ---- 编辑器 / 临时交换文件 ----
+# ---- 编辑器 / 临时交换文件 /一次性脚本----
 *.swp
 *.swo
 *.bak
 *.tmp
+*.sh
+*run_*.py
 # ---- 一次性测试草稿(仅 "hello",无内容)----
 /test.txt
 # figure 下仅保留架构示意图 pic.svg,其余草稿不传
@@ -86,6 +88,7 @@ figure/*.txt
 
 # ---- AI 助手 / 编辑器私有目录 ----
 .mimocode/
+.github/skills/
 .claude/
 **/.mimocode/
 **/.claude/
